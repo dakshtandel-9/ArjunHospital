@@ -58,7 +58,7 @@ export default function HealthCampsBanner() {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-purple-50 via-blue-50 to-green-50">
+    <section id="health-camps" className="py-16 bg-gradient-to-br from-purple-50 via-blue-50 to-green-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <span className="inline-block px-3 py-1 text-sm font-medium text-purple-600 bg-purple-100 rounded-full mb-4">

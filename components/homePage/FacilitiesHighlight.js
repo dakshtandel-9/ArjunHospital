@@ -83,7 +83,7 @@ export default function FacilitiesHighlight() {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section id="facilities" className="py-16 bg-gray-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <span className="inline-block px-3 py-1 text-sm font-medium text-blue-600 bg-blue-100 rounded-full mb-4">

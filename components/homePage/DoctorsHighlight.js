@@ -8,49 +8,22 @@ export default function DoctorsHighlight() {
 
   const doctors = [
     {
-      name: 'Dr. Rajesh Kumar',
-      specialization: 'Cardiologist',
+      name: 'Dr. Arjun Kumar Avvaru',
+      specialization: 'General Medicine & Critical Care Specialist',
       experience: '15+ Years',
-      qualifications: 'MBBS, MD (Cardiology)',
-      description: 'Expert in heart diseases, cardiac interventions, and preventive cardiology.',
-      image: '/doctors/doctor-1.jpg', // Placeholder
-      availability: 'Mon-Sat: 10 AM - 6 PM'
+      qualifications: 'MD General Medicine, Senior Physician & Critical Care Specialist',
+      description: 'Expert in general medicine, critical care, and emergency medical treatments with extensive experience in patient care.',
+      image: '/doctor/arjun.png',
+      availability: 'Mon-Sat: 9 AM - 6 PM'
     },
     {
-      name: 'Dr. Priya Sharma',
-      specialization: 'Gynecologist & Obstetrician',
+      name: 'Dr. Sireesha Ratala',
+      specialization: 'OBG, Laparoscopic and Infertility Specialist',
       experience: '12+ Years',
-      qualifications: 'MBBS, MS (OBG)',
-      description: 'Specialized in women\'s health, pregnancy care, and minimally invasive surgeries.',
-      image: '/doctors/doctor-2.jpg', // Placeholder
-      availability: 'Mon-Fri: 9 AM - 5 PM'
-    },
-    {
-      name: 'Dr. Suresh Reddy',
-      specialization: 'Orthopedic Surgeon',
-      experience: '18+ Years',
-      qualifications: 'MBBS, MS (Orthopedics)',
-      description: 'Expert in joint replacement, sports injuries, and spine surgeries.',
-      image: '/doctors/doctor-3.jpg', // Placeholder
-      availability: 'Tue-Sun: 11 AM - 7 PM'
-    },
-    {
-      name: 'Dr. Anitha Rao',
-      specialization: 'Pediatrician',
-      experience: '10+ Years',
-      qualifications: 'MBBS, MD (Pediatrics)',
-      description: 'Specialized in child healthcare, vaccinations, and developmental disorders.',
-      image: '/doctors/doctor-4.jpg', // Placeholder
-      availability: 'Mon-Sat: 8 AM - 4 PM'
-    },
-    {
-      name: 'Dr. Venkat Rao',
-      specialization: 'General Surgeon',
-      experience: '20+ Years',
-      qualifications: 'MBBS, MS (Surgery)',
-      description: 'Expert in laparoscopic surgeries, trauma care, and emergency procedures.',
-      image: '/doctors/doctor-5.jpg', // Placeholder
-      availability: '24/7 Emergency'
+      qualifications: 'MS OBG, Laparoscopic and Infertility Specialist, Cosmetic Gynecologist',
+      description: 'Specialized in women\'s health, laparoscopic surgeries, infertility treatments, and cosmetic gynecology procedures.',
+      image: '/doctor/shreesha.png',
+      availability: 'Mon-Fri: 10 AM - 5 PM'
     }
   ];
 
@@ -67,7 +40,7 @@ export default function DoctorsHighlight() {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-blue-50 to-white">
+    <section id="doctors" className="py-16 bg-gradient-to-br from-blue-50 to-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <span className="inline-block px-3 py-1 text-sm font-medium text-blue-600 bg-blue-100 rounded-full mb-4">
@@ -95,11 +68,14 @@ export default function DoctorsHighlight() {
                       {/* Doctor Image */}
                       <div className="text-center lg:text-left">
                         <div className="relative w-64 h-64 mx-auto lg:mx-0 mb-6">
-                          <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-50 rounded-full flex items-center justify-center">
-                            <svg className="w-32 h-32 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-                              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                            </svg>
-                          </div>
+                          <Image
+                            src={doctor.image}
+                            alt={`${doctor.name} - ${doctor.specialization}`}
+                            width={256}
+                            height={256}
+                            className="w-full h-full object-cover rounded-full shadow-lg"
+                            priority
+                          />
                         </div>
                         
                         {/* Availability Badge */}
@@ -131,21 +107,6 @@ export default function DoctorsHighlight() {
                         </div>
                         
                         <p className="text-gray-600 mb-6">{doctor.description}</p>
-                        
-                        <div className="flex flex-col sm:flex-row gap-3">
-                          <Link
-                            href={`/doctors/${doctor.name.toLowerCase().replace(/\s+/g, '-').replace(/\./g, '')}`}
-                            className="inline-flex items-center justify-center rounded-lg bg-blue-600 text-white px-6 py-2 text-sm font-semibold hover:bg-blue-700 transition-colors"
-                          >
-                            View Profile
-                          </Link>
-                          <Link
-                            href="/appointments"
-                            className="inline-flex items-center justify-center rounded-lg border border-blue-600 text-blue-600 px-6 py-2 text-sm font-semibold hover:bg-blue-50 transition-colors"
-                          >
-                            Book Appointment
-                          </Link>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -187,18 +148,7 @@ export default function DoctorsHighlight() {
           ))}
         </div>
 
-        {/* View All Doctors CTA */}
-        <div className="text-center mt-12">
-          <Link
-            href="/doctors"
-            className="inline-flex items-center justify-center rounded-lg bg-blue-600 text-white px-8 py-3 text-lg font-semibold hover:bg-blue-700 transition-colors"
-          >
-            View All Doctors
-            <svg className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-            </svg>
-          </Link>
-        </div>
+
       </div>
     </section>
   );

@@ -44,7 +44,7 @@ export default function FAQPreview() {
   };
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section id="faq" className="py-16 bg-gray-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <span className="inline-block px-3 py-1 text-sm font-medium text-blue-600 bg-blue-100 rounded-full mb-4">
@@ -168,19 +168,7 @@ export default function FAQPreview() {
           </div>
         </div>
 
-        {/* View All FAQs CTA */}
-        <div className="text-center mt-12">
-          <p className="text-gray-600 mb-6">Looking for more detailed information?</p>
-          <a
-            href="/faq"
-            className="inline-flex items-center justify-center rounded-lg bg-blue-600 text-white px-8 py-3 text-lg font-semibold hover:bg-blue-700 transition-colors"
-          >
-            View All FAQs
-            <svg className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-            </svg>
-          </a>
-        </div>
+
       </div>
     </section>
   );

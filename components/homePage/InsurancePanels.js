@@ -1,17 +1,5 @@
 export default function InsurancePanels() {
   const insurancePartners = [
-    { name: 'Star Health', logo: '🌟' },
-    { name: 'ICICI Lombard', logo: '🏦' },
-    { name: 'HDFC ERGO', logo: '🏛️' },
-    { name: 'New India Assurance', logo: '🇮🇳' },
-    { name: 'Oriental Insurance', logo: '🏢' },
-    { name: 'United India Insurance', logo: '🤝' },
-    { name: 'National Insurance', logo: '🏛️' },
-    { name: 'Bajaj Allianz', logo: '⚡' },
-    { name: 'Reliance General', logo: '🔷' },
-    { name: 'Tata AIG', logo: '🚗' },
-    { name: 'SBI General', logo: '🏦' },
-    { name: 'Cholamandalam MS', logo: '🏢' }
   ];
 
   const cashlessSteps = [
@@ -58,7 +46,7 @@ export default function InsurancePanels() {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-blue-50 to-white">
+    <section id="insurance" className="py-16 bg-gradient-to-br from-blue-50 to-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <span className="inline-block px-3 py-1 text-sm font-medium text-blue-600 bg-blue-100 rounded-full mb-4">
@@ -72,35 +60,6 @@ export default function InsurancePanels() {
           </p>
         </div>
 
-        {/* Insurance Partners */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">
-            Our Insurance Partners
-          </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
-            {insurancePartners.map((partner, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow border border-gray-100 text-center"
-              >
-                <div className="text-3xl mb-2">{partner.logo}</div>
-                <div className="text-sm font-medium text-gray-700">{partner.name}</div>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-8">
-            <p className="text-gray-600 mb-4">Don't see your insurance? Contact us - we work with 50+ insurance providers!</p>
-            <a
-              href="tel:6305800108"
-              className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium"
-            >
-              Call us to verify your insurance
-              <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-              </svg>
-            </a>
-          </div>
-        </div>
 
         {/* Cashless Process */}
         <div className="bg-white rounded-2xl p-8 shadow-lg">

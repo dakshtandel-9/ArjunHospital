@@ -9,14 +9,13 @@ export default function Header() {
 
   const navItems = [
     { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
-    { href: "/departments", label: "Departments" },
-    { href: "/doctors", label: "Doctors" },
-    { href: "/facilities", label: "Facilities" },
-    { href: "/diagnostics", label: "Diagnostics" },
-    { href: "/insurance", label: "Insurance/Cashless" },
-    { href: "/health-camps", label: "Health Camps" },
-    { href: "/contact", label: "Contact" },
+    { href: "/#about", label: "About" },
+    { href: "/#services", label: "Services" },
+    { href: "/#doctors", label: "Doctors" },
+    { href: "/#facilities", label: "Facilities" },
+    { href: "/#testimonials", label: "Testimonials" },
+    { href: "/#insurance", label: "Insurance" },
+    { href: "/#faq", label: "FAQ" },
   ];
 
   return (

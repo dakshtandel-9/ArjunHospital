@@ -21,7 +21,6 @@ export default function HomePage() {
       <FacilitiesHighlight />
       <PatientTestimonials />
       <InsurancePanels />
-      <HealthCampsBanner />
       <FAQPreview />
       <StickyFooterBar />
     </div>

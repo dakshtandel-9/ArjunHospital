@@ -66,7 +66,7 @@ export default function Hero() {
             {/* Hospital Image */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/1.jpg"
+                src="https://res.cloudinary.com/dlk0wvka6/image/upload/v1758061507/1_lg3oya.jpg"
                 alt="Arjun Hospital - Modern Healthcare Facility in Kadapa"
                 width={600}
                 height={400}

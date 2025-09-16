@@ -151,7 +151,7 @@ export default function FacilitiesHighlight() {
         <div className="mt-12 bg-gradient-to-r from-red-600 to-red-700 rounded-2xl p-8 text-center text-white">
           <h3 className="text-2xl font-bold mb-4">Need Immediate Medical Attention?</h3>
           <p className="text-red-100 mb-6 max-w-2xl mx-auto">
-            Our emergency services and ambulance are available 24/7. Don't hesitate to contact us for any medical emergency.
+            Our emergency services and ambulance are available 24/7. Don&apos;t hesitate to contact us for any medical emergency.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

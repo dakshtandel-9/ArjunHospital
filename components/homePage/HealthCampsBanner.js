@@ -119,7 +119,7 @@ export default function HealthCampsBanner() {
 
                 {/* Features */}
                 <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-gray-900 mb-3">What's Included:</h4>
+                  <h4 className="text-sm font-semibold text-gray-900 mb-3">What&apos;s Included:</h4>
                   <div className="grid grid-cols-2 gap-2">
                     {camp.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-center text-sm text-gray-600">
@@ -161,7 +161,7 @@ export default function HealthCampsBanner() {
         <div className="bg-white rounded-2xl p-8 shadow-lg">
           <div className="text-center mb-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Recent Health Camp Success</h3>
-            <p className="text-gray-600">We've successfully conducted numerous health camps, helping thousands of people with early detection and prevention.</p>
+            <p className="text-gray-600">We&apos;ve successfully conducted numerous health camps, helping thousands of people with early detection and prevention.</p>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

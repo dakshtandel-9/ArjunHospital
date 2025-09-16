@@ -132,7 +132,7 @@ export default function PatientTestimonials() {
                       
                       {/* Testimonial Content */}
                       <blockquote className="text-lg text-gray-700 text-center mb-8 leading-relaxed">
-                        "{testimonial.comment}"
+                        &quot;{testimonial.comment}&quot;
                       </blockquote>
                       
                       {/* Rating */}

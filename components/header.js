@@ -21,11 +21,11 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur border-b border-black/10 dark:border-white/10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-[auto_1fr_auto] h-16 items-center gap-3">
+        <div className="grid grid-cols-[auto_1fr_auto] h-14 sm:h-16 items-center gap-2 sm:gap-3">
           {/* Left: Logo only */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-foreground/40 rounded">
-              <Image src="/logo.png" alt="Arjun Hospital logo" width={150} height={48} priority />
+              <Image src="/logo.png" alt="Arjun Hospital logo" width={120} height={38} className="sm:w-[150px] sm:h-[48px]" priority />
             </Link>
           </div>
 
@@ -45,18 +45,18 @@ export default function Header() {
           {/* Right: 24x7 Emergency (md+) + mobile menu button */}
           <div className="flex items-center justify-end gap-2">
             <a
-              href="tel:6305800108"
-              className="hidden md:inline-flex items-center justify-center rounded-md bg-red-600 text-white px-3 py-2 text-sm font-semibold hover:bg-red-700 transition-colors"
-            >
-              24x7 Emergency
-            </a>
+                href="tel:6305800108"
+                className="hidden md:inline-flex items-center justify-center rounded-md bg-red-600 text-white px-2 sm:px-3 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold hover:bg-red-700 transition-colors"
+              >
+                24x7 Emergency
+              </a>
             <button
-              aria-label="Toggle menu"
-              aria-expanded={open}
-              onClick={() => setOpen((v) => !v)}
-              className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-foreground/80 hover:text-foreground hover:bg-black/[.04] dark:hover:bg-white/[.06] focus:outline-none focus:ring-2 focus:ring-foreground/40"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6">
+                aria-label="Toggle menu"
+                aria-expanded={open}
+                onClick={() => setOpen((v) => !v)}
+                className="md:hidden inline-flex items-center justify-center rounded-md p-1.5 sm:p-2 text-foreground/80 hover:text-foreground hover:bg-black/[.04] dark:hover:bg-white/[.06] focus:outline-none focus:ring-2 focus:ring-foreground/40"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 sm:h-6 sm:w-6">
                 {open ? (
                   <path fillRule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clipRule="evenodd" />
                 ) : (
@@ -69,14 +69,14 @@ export default function Header() {
 
         {/* Mobile Panel */}
         {open && (
-          <div className="md:hidden border-t border-black/10 dark:border-white/10 pb-4">
-            <nav className="flex flex-col gap-3 pt-3">
+          <div className="md:hidden border-t border-black/10 dark:border-white/10 pb-3 sm:pb-4">
+            <nav className="flex flex-col gap-2 sm:gap-3 pt-2 sm:pt-3">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="px-1 text-base font-medium text-foreground/80 hover:text-foreground"
+                  className="px-1 text-sm sm:text-base font-medium text-foreground/80 hover:text-foreground py-1"
                 >
                   {item.label}
                 </Link>
@@ -84,7 +84,7 @@ export default function Header() {
               <a
                 href="tel:6305800108"
                 onClick={() => setOpen(false)}
-                className="mt-2 rounded-md bg-red-600 text-white px-3 py-2 text-base font-semibold text-center hover:bg-red-700 transition-colors"
+                className="mt-1 sm:mt-2 rounded-md bg-red-600 text-white px-3 py-2 text-sm sm:text-base font-semibold text-center hover:bg-red-700 transition-colors"
               >
                 24x7 Emergency
               </a>

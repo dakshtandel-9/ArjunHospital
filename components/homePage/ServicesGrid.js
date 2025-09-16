@@ -115,38 +115,38 @@ export default function ServicesGrid() {
   return (
     <section id="services" className="py-16 bg-gray-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
             Our Top Services
           </h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-3 sm:mt-4 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
             Comprehensive healthcare services with state-of-the-art facilities and expert medical professionals
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow p-6 border border-gray-200"
+              className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow p-4 sm:p-6 border border-gray-200"
             >
-              <div className={`inline-flex items-center justify-center w-16 h-16 ${service.bgColor} rounded-lg mb-4`}>
+              <div className={`inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 ${service.bgColor} rounded-lg mb-3 sm:mb-4`}>
                 <div className={service.iconColor}>
                   {service.icon}
                 </div>
               </div>
               
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
                 {service.name}
               </h3>
               
-              <p className="text-gray-600 mb-4">
+              <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
                 {service.description}
               </p>
               
               <Link
                 href={service.href}
-                className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors"
+                className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-xs sm:text-sm transition-colors"
               >
                 Learn more
                 <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
@@ -158,13 +158,13 @@ export default function ServicesGrid() {
         </div>
 
         {/* View All Services CTA */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-8 sm:mt-12">
           <Link
             href="/departments"
-            className="inline-flex items-center justify-center rounded-lg bg-blue-600 text-white px-8 py-3 text-lg font-semibold hover:bg-blue-700 transition-colors"
+            className="inline-flex items-center justify-center rounded-lg bg-blue-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 text-base sm:text-lg font-semibold hover:bg-blue-700 transition-colors"
           >
             View All Departments
-            <svg className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>
           </Link>

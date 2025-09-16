@@ -24,58 +24,59 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-50 border-t border-gray-200">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Brand & Contact */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center gap-2 mb-3 sm:mb-4">
               <Image
                 src="/logo.png"
                 alt="Arjun Hospital logo"
-                width={120}
-                height={38}
+                width={100}
+                height={32}
+                className="sm:w-[120px] sm:h-[38px]"
                 priority
               />
             </div>
-            <p className="text-sm text-gray-600 mb-4 max-w-md">
+            <p className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4 max-w-md">
               Providing quality healthcare services with 24x7 emergency care, advanced diagnostics, and specialized treatments in Kadapa.
             </p>
             
-            <div className="space-y-2 text-sm">
+            <div className="space-y-2 text-xs sm:text-sm">
               <div className="flex items-center gap-2">
-                <svg className="w-4 h-4 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-3 h-3 sm:w-4 sm:h-4 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                 </svg>
                 <span className="text-gray-600">Kollavaripalli, Kadapa 516002</span>
               </div>
               <div className="flex items-center gap-2">
-                <svg className="w-4 h-4 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-3 h-3 sm:w-4 sm:h-4 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
-                <div className="flex gap-4">
+                <div className="flex flex-col sm:flex-row gap-1 sm:gap-4">
                   <a href="tel:6305800108" className="text-gray-600 hover:text-gray-900">63058 00108</a>
                   <a href="tel:8142188108" className="text-gray-600 hover:text-gray-900">81421 88108</a>
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <svg className="w-4 h-4 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-3 h-3 sm:w-4 sm:h-4 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
-                <a href="mailto:arjunhospitalkadapa@gmail.com" className="text-gray-600 hover:text-gray-900">arjunhospitalkadapa@gmail.com</a>
+                <a href="mailto:arjunhospitalkadapa@gmail.com" className="text-gray-600 hover:text-gray-900 break-all">arjunhospitalkadapa@gmail.com</a>
               </div>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-sm font-semibold text-gray-900 mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <h3 className="text-sm font-semibold text-gray-900 mb-3 sm:mb-4">Quick Links</h3>
+            <ul className="space-y-1.5 sm:space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                    className="text-xs sm:text-sm text-gray-600 hover:text-gray-900 transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -86,13 +87,13 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-sm font-semibold text-gray-900 mb-4">Services</h3>
-            <ul className="space-y-2">
+            <h3 className="text-sm font-semibold text-gray-900 mb-3 sm:mb-4">Services</h3>
+            <ul className="space-y-1.5 sm:space-y-2">
               {services.map((service) => (
                 <li key={service.label}>
                   <Link
                     href={service.href}
-                    className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                    className="text-xs sm:text-sm text-gray-600 hover:text-gray-900 transition-colors"
                   >
                     {service.label}
                   </Link>

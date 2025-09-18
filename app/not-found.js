@@ -1,6 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Page Not Found - Arjun Hospital Kadapa | 404 Error",
+  description: "The page you're looking for doesn't exist. Visit Arjun Hospital's homepage for healthcare services, emergency care, and medical treatments in Kadapa.",
+  robots: "noindex, nofollow",
+};
+
 export default function NotFound() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex items-center justify-center px-4 py-8">
@@ -42,7 +48,7 @@ export default function NotFound() {
             Page Not Found
           </h1>
           <p className="text-gray-600 leading-relaxed">
-            The page you're looking for doesn't exist. Don't worry, our medical team is always here to help you find what you need.
+            The page you&apos;re looking for doesn&apos;t exist. Don&apos;t worry, our medical team is always here to help you find what you need.
           </p>
         </div>
 
@@ -85,7 +91,7 @@ export default function NotFound() {
 
         {/* Footer Note */}
         <p className="text-sm text-gray-500 mt-8">
-          Need help? Contact us anytime - we're here 24/7 for your healthcare needs.
+          Need help? Contact us anytime - we&apos;re here 24/7 for your healthcare needs.
         </p>
       </div>
     </div>

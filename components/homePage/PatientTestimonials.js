@@ -6,43 +6,43 @@ export default function PatientTestimonials() {
 
   const testimonials = [
     {
-      name: 'Rajesh Kumar',
-      age: 45,
-      treatment: 'Cardiac Surgery',
+      name: 'Anitha Reddy',
+      age: 29,
+      treatment: 'Pediatric Care',
       rating: 5,
-      comment: 'Excellent care and treatment. The doctors and staff were very professional and caring. My surgery was successful and recovery was smooth.',
+      comment: 'The pediatric team at Arjun Hospital is exceptional. My 3-year-old son received the best care during his treatment. The doctors were patient and gentle, making the whole experience stress-free for our family.',
       location: 'Kadapa'
     },
     {
-      name: 'Priya Sharma',
-      age: 32,
-      treatment: 'Maternity Care',
+      name: 'Ramesh Naidu',
+      age: 52,
+      treatment: 'Neurology',
       rating: 5,
-      comment: 'Amazing experience during my delivery. The OBG department is outstanding.Dr. Sireesha Ratala and her team made everything comfortable and safe.',
+      comment: 'After suffering from severe headaches for months, the neurology department diagnosed and treated my condition perfectly. Dr. Prasad and his team provided excellent care and follow-up. I am completely recovered now.',
+      location: 'Cuddapah'
+    },
+    {
+      name: 'Kavitha Devi',
+      age: 35,
+      treatment: 'Gastroenterology',
+      rating: 5,
+      comment: 'The gastroenterology department helped me overcome my digestive issues with their advanced treatment methods. The staff was compassionate and the facilities are top-notch. Highly recommend this hospital.',
       location: 'Proddatur'
     },
     {
-      name: 'Venkat Reddy',
-      age: 58,
-      treatment: 'Orthopedic Surgery',
+      name: 'Srinivas Rao',
+      age: 61,
+      treatment: 'Urology',
       rating: 5,
-      comment: 'Had knee replacement surgery here. The facilities are world-class and the post-operative care was exceptional. Highly recommended.',
+      comment: 'Had a successful kidney stone removal surgery here. The urologist explained everything clearly and the post-operative care was outstanding. The nursing staff was very attentive throughout my stay.',
       location: 'Rayachoty'
     },
     {
-      name: 'Lakshmi Devi',
-      age: 38,
-      treatment: 'Emergency Care',
+      name: 'Madhavi Latha',
+      age: 28,
+      treatment: 'Dermatology',
       rating: 5,
-      comment: 'Quick response during emergency. The 24x7 service saved my husband\'s life. Forever grateful to the entire medical team.',
-      location: 'Kadapa'
-    },
-    {
-      name: 'Suresh Babu',
-      age: 42,
-      treatment: 'General Medicine',
-      rating: 5,
-      comment: 'Regular check-ups and treatment for diabetes. The doctors are very knowledgeable and the staff is friendly. Great hospital.',
+      comment: 'The dermatology department helped me with my skin condition that I had been struggling with for years. The treatment was effective and the doctors were very knowledgeable. Thank you for giving me my confidence back.',
       location: 'Jammalamadugu'
     }
   ];

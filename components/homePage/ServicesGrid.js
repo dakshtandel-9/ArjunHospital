@@ -143,31 +143,8 @@ export default function ServicesGrid() {
               <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
                 {service.description}
               </p>
-              
-              <Link
-                href={service.href}
-                className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-xs sm:text-sm transition-colors"
-              >
-                Learn more
-                <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-              </Link>
             </div>
           ))}
-        </div>
-
-        {/* View All Services CTA */}
-        <div className="text-center mt-8 sm:mt-12">
-          <Link
-            href="/departments"
-            className="inline-flex items-center justify-center rounded-lg bg-blue-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 text-base sm:text-lg font-semibold hover:bg-blue-700 transition-colors"
-          >
-            View All Departments
-            <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-            </svg>
-          </Link>
         </div>
       </div>
     </section>

@@ -37,28 +37,14 @@ export default function Hero() {
                 Call 24x7 Emergency
               </a>
               <Link
-                href="/appointments"
+                href="https://wa.me/6305800108"
                 className="inline-flex items-center justify-center rounded-lg border-2 border-blue-600 text-blue-600 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors"
               >
                 Book Appointment
               </Link>
             </div>
 
-            {/* Quick Links to Departments */}
-            <div className="mt-6 sm:mt-8">
-              <p className="text-xs sm:text-sm font-medium text-gray-700 mb-2 sm:mb-3">Quick Access to Departments:</p>
-              <div className="flex flex-wrap gap-1.5 sm:gap-2 justify-center lg:justify-start">
-                {departments.map((dept) => (
-                  <Link
-                    key={dept.name}
-                    href={dept.href}
-                    className="inline-flex items-center px-2 sm:px-3 py-1 sm:py-1.5 rounded-full text-xs sm:text-sm font-medium bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 hover:border-gray-400 transition-colors"
-                  >
-                    {dept.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
+
           </div>
 
           {/* Right Content - Hero Image/Visual */}

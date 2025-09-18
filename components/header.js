@@ -44,12 +44,17 @@ export default function Header() {
 
           {/* Right: 24x7 Emergency (md+) + mobile menu button */}
           <div className="flex items-center justify-end gap-2">
+            {/* Emergency Button - Desktop */}
             <a
-                href="tel:6305800108"
-                className="hidden md:inline-flex items-center justify-center rounded-md bg-red-600 text-white px-2 sm:px-3 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold hover:bg-red-700 transition-colors"
-              >
-                24x7 Emergency
-              </a>
+              href="tel:6305800108"
+              className="hidden md:inline-flex items-center gap-2 px-3 py-2 bg-red-600 text-white text-sm font-semibold rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition-colors"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              24/7 Emergency
+            </a>
+            
             <button
                 aria-label="Toggle menu"
                 aria-expanded={open}
@@ -81,12 +86,17 @@ export default function Header() {
                   {item.label}
                 </Link>
               ))}
+              
+              {/* Emergency Button - Mobile */}
               <a
                 href="tel:6305800108"
                 onClick={() => setOpen(false)}
-                className="mt-1 sm:mt-2 rounded-md bg-red-600 text-white px-3 py-2 text-sm sm:text-base font-semibold text-center hover:bg-red-700 transition-colors"
+                className="mx-1 mt-2 inline-flex items-center justify-center gap-2 px-4 py-3 bg-red-600 text-white text-sm font-semibold rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition-colors"
               >
-                24x7 Emergency
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                24/7 Emergency
               </a>
             </nav>
           </div>

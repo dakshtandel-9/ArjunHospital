@@ -84,7 +84,7 @@ export default function AboutSnapshot() {
 
             {/* CTA Button */}
             <Link
-              href="/doctors"
+              href="/#doctors"
               className="inline-flex items-center justify-center rounded-lg bg-blue-600 text-white px-6 sm:px-8 py-2.5 sm:py-3 text-base sm:text-lg font-semibold hover:bg-blue-700 transition-colors"
             >
               View Our Doctors

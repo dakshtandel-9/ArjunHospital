@@ -18,7 +18,7 @@ export default function PatientTestimonials() {
       age: 32,
       treatment: 'Maternity Care',
       rating: 5,
-      comment: 'Amazing experience during my delivery. The OBG department is outstanding. Dr. Priya and her team made everything comfortable and safe.',
+      comment: 'Amazing experience during my delivery. The OBG department is outstanding.Dr. Sireesha Ratala and her team made everything comfortable and safe.',
       location: 'Proddatur'
     },
     {

@@ -13,15 +13,27 @@ import StickyFooterBar from './StickyFooterBar';
 export default function HomePage() {
   return (
     <div className="min-h-screen">
-      <Hero />
+      <section id="hero">
+        <Hero />
+      </section>
       <TrustBar />
-      <ServicesGrid />
-      <AboutSnapshot />
-      <DoctorsHighlight />
-      <FacilitiesHighlight />
+      <section id="departments">
+        <ServicesGrid />
+      </section>
+      <section id="about">
+        <AboutSnapshot />
+      </section>
+      <section id="doctors">
+        <DoctorsHighlight />
+      </section>
+      <section id="facilities">
+        <FacilitiesHighlight />
+      </section>
       <PatientTestimonials />
       <InsurancePanels />
-      <FAQPreview />
+      <section id="contact">
+        <FAQPreview />
+      </section>
       <StickyFooterBar />
     </div>
   );

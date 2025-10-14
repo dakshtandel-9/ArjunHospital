@@ -2,14 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Hero() {
-  const departments = [
-    { name: 'Emergency', href: '/departments/emergency' },
-    { name: 'ICU', href: '/departments/icu' },
-    { name: 'General Medicine', href: '/departments/general-medicine' },
-    { name: 'OBG', href: '/departments/obg' },
-    { name: 'Surgery', href: '/departments/surgery' },
-    { name: 'Orthopedics', href: '/departments/orthopedics' },
-  ];
 
   return (
     <section className="relative bg-gradient-to-br from-blue-50 to-white py-16 lg:py-24">
@@ -52,7 +44,7 @@ export default function Hero() {
             {/* Hospital Image */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://res.cloudinary.com/dlk0wvka6/image/upload/v1758061507/1_lg3oya.jpg"
+                src="/images/1.png"
                 alt="Arjun Hospital - Modern Healthcare Facility in Kadapa"
                 width={600}
                 height={400}

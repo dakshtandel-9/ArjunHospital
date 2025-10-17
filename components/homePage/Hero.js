@@ -29,7 +29,7 @@ export default function Hero() {
                 Call 24x7 Emergency
               </a>
               <Link
-                href="https://wa.me/6305800108"
+                href="https://wa.me/916305800108"
                 className="inline-flex items-center justify-center rounded-lg border-2 border-blue-600 text-blue-600 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors"
               >
                 Book Appointment

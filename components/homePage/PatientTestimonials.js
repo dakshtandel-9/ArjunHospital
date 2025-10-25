@@ -6,45 +6,30 @@ export default function PatientTestimonials() {
 
   const testimonials = [
     {
-      name: 'Anitha Reddy',
-      age: 29,
-      treatment: 'Pediatric Care',
+      name: 'Jinka Suresh',
       rating: 5,
-      comment: 'The pediatric team at Arjun Hospital is exceptional. My 3-year-old son received the best care during his treatment. The doctors were patient and gentle, making the whole experience stress-free for our family.',
-      location: 'Kadapa'
+      comment: 'Dr.Arjun Sir is an excellent doctor with deep knowledge and a very caring approach. He listens patiently, explains everything clearly, and gives the right treatment. His friendly nature and dedication make patients feel comfortable and confident. Truly one of the best doctors I’ve consulted.',
     },
     {
-      name: 'Ramesh Naidu',
-      age: 52,
-      treatment: 'Neurology',
-      rating: 5,
-      comment: 'After suffering from severe headaches for months, the neurology department diagnosed and treated my condition perfectly. Dr. Prasad and his team provided excellent care and follow-up. I am completely recovered now.',
-      location: 'Cuddapah'
+name:'Hari kumar Hari kumar',
+rating: 5,
+comment:'We are very grateful to Dr.sireesha maam and entire Arjun hospital team for care during my wife delivery.Both mother and baby are safe after delivery. This is the 1st pregnancy, we never thought that it would be a normal delivery but it happened by Dr sireesha maam. Thank you so much maam The best hospital for Pregnant patients and safe in Dr.sireesha maam hands. Thank you so much Dr.Arjun Kumar sir for the care and support. We highly recommend Arjun hospital for emergency and maternity care.'
     },
     {
-      name: 'Kavitha Devi',
-      age: 35,
-      treatment: 'Gastroenterology',
+      name: 'Rahul Vedam',
       rating: 5,
-      comment: 'The gastroenterology department helped me overcome my digestive issues with their advanced treatment methods. The staff was compassionate and the facilities are top-notch. Highly recommend this hospital.',
-      location: 'Proddatur'
+      comment: 'I came to arjun hospital for my brother in emergency situation hospital staff and doctor responded quickly and treatment given. The best hospital for emergency and all the health check up. I have stayed in hospital for 2days, rooms were cleaned and well maintained. All prices are affordable to common people. Highly suggested for emergency treatment Thanks to arjun sir , duty doctors and entire hospital staff for quick response and treatment'
     },
     {
-      name: 'Srinivas Rao',
-      age: 61,
-      treatment: 'Urology',
+      name: 'Faziya Shabnam Shaik',
       rating: 5,
-      comment: 'Had a successful kidney stone removal surgery here. The urologist explained everything clearly and the post-operative care was outstanding. The nursing staff was very attentive throughout my stay.',
-      location: 'Rayachoty'
+      comment: 'We are Deeply Greatful 2 Dr.Arjun kumar Avvaru sir for Treatment u given 2 my sister during a very Critical time. Thanks 2all DutyDrs,Sisters &2the Entire Staff for the Care and continuous monitoring and treatment on time. Thank u so much to Dr.Arjun kumar sir and entire medical team for care and support.....we will never Forget your efforts..THANK YOU......'
     },
     {
-      name: 'Madhavi Latha',
-      age: 28,
-      treatment: 'Dermatology',
+      name: 'Rajesh Tippana',
       rating: 5,
-      comment: 'The dermatology department helped me with my skin condition that I had been struggling with for years. The treatment was effective and the doctors were very knowledgeable. Thank you for giving me my confidence back.',
-      location: 'Jammalamadugu'
-    }
+      comment: 'We are deeply greatful to Dr. Arjun Kumar sir for treetment you given to my mother in law during a very critical Time. Thanks to all duty doctors, sisters and to the entire staff for the care and continuous monitoring and treatment on time. This hospital is very clean and friendly staff.  Quick response from all staff in any need. I highly recommend ARJUN HOSPITAL to anyone In emergency and for expert medical  attention. Thank you so much to  Dr. Arjun Kumar sir and entire medical team for care and support. We will never forget your efforts. Thank you'
+    },
   ];
 
   const nextSlide = () => {
@@ -148,8 +133,6 @@ export default function PatientTestimonials() {
                           </svg>
                         </div>
                         <h4 className="text-xl font-semibold text-gray-900 mb-1">{testimonial.name}</h4>
-                        <p className="text-sm text-gray-600 mb-1">Age: {testimonial.age} | {testimonial.location}</p>
-                        <p className="text-sm font-medium text-blue-600">{testimonial.treatment}</p>
                       </div>
                     </div>
                   </div>

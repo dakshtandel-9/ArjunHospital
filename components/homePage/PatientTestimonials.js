@@ -185,7 +185,7 @@ comment:'We are very grateful to Dr.sireesha maam and entire Arjun hospital team
               Book Your Appointment
             </a>
             <a
-              href="https://wa.me/6305800108"
+              href="https://wa.me/916305800108"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-lg border border-blue-600 text-blue-600 px-6 py-3 text-lg font-semibold hover:bg-blue-50 transition-colors"

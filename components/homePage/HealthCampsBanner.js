@@ -141,7 +141,7 @@ export default function HealthCampsBanner() {
                     Register Now
                   </a>
                   <a
-                    href="https://wa.me/6305800108"
+                    href="https://wa.me/916305800108"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full inline-flex items-center justify-center rounded-lg border border-gray-300 text-gray-700 px-4 py-3 text-sm font-semibold hover:bg-gray-50 transition-colors"

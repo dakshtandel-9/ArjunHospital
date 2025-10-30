@@ -145,7 +145,7 @@ export default function InsurancePanels() {
                 Call Insurance Desk
               </a>
               <a
-                href="https://wa.me/6305800108"
+                href="https://wa.me/916305800108"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-lg border-2 border-white text-white px-6 py-3 text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"

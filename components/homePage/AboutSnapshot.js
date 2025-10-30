@@ -9,7 +9,7 @@ export default function AboutSnapshot() {
       description: 'Serving the community with dedication'
     },
     {
-      number: '50+',
+      number: '10+',
       label: 'Expert Doctors',
       description: 'Qualified specialists across departments'
     },

@@ -46,7 +46,7 @@ export default function Header() {
           <div className="flex items-center justify-end gap-2">
             {/* Emergency Button - Desktop */}
             <a
-              href="tel:6305800108"
+              href="tel:+916305800108"
               className="hidden md:inline-flex items-center gap-2 px-3 py-2 bg-red-600 text-white text-sm font-semibold rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition-colors"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -89,7 +89,7 @@ export default function Header() {
               
               {/* Emergency Button - Mobile */}
               <a
-                href="tel:6305800108"
+                href="tel:+916305800108"
                 onClick={() => setOpen(false)}
                 className="mx-1 mt-2 inline-flex items-center justify-center gap-2 px-4 py-3 bg-red-600 text-white text-sm font-semibold rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition-colors"
               >

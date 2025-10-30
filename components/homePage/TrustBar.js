@@ -60,7 +60,7 @@ export default function TrustBar() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
             <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
               <a
-                href="tel:6305800108"
+                href="tel:+916305800108"
                 className="inline-flex items-center gap-2 bg-blue-600 text-white px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-medium hover:bg-blue-700 transition-colors"
               >
                 <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="currentColor" viewBox="0 0 20 20">

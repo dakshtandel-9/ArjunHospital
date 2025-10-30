@@ -26,7 +26,7 @@ export default function StickyFooterBar() {
           <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
         </svg>
       ),
-      href: 'tel:6305800108',
+      href: 'tel:+916305800108',
       color: 'bg-blue-600 hover:bg-blue-700',
       pulse: true
     },
@@ -59,7 +59,7 @@ export default function StickyFooterBar() {
           <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
         </svg>
       ),
-      href: 'tel:6305800108',
+      href: 'tel:+916305800108',
       color: 'bg-purple-600 hover:bg-purple-700'
     }
   ];
@@ -98,7 +98,7 @@ export default function StickyFooterBar() {
         <div className="flex flex-col space-y-3">
           {/* Emergency Call Button */}
           <a
-            href="tel:6305800108"
+            href="tel:+916305800108"
             className="group relative flex items-center justify-center w-14 h-14 bg-red-600 hover:bg-red-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse"
           >
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
@@ -129,7 +129,7 @@ export default function StickyFooterBar() {
 
           {/* Appointment Button */}
           <a
-            href="tel:6305800108"
+            href="tel:+916305800108"
             className="group relative flex items-center justify-center w-12 h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">

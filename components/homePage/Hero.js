@@ -20,7 +20,7 @@ export default function Hero() {
             {/* Primary CTAs */}
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
               <a
-                href="tel:6305800108"
+                href="tel:+916305800108"
                 className="inline-flex items-center justify-center rounded-lg bg-red-600 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold hover:bg-red-700 transition-colors shadow-lg"
               >
                 <svg className="w-4 h-4 sm:w-5 sm:h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">

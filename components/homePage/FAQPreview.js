@@ -15,7 +15,7 @@ export default function FAQPreview() {
     },
     {
       question: 'How can I book an appointment with a specialist?',
-      answer: 'You can book appointments through multiple ways: Call us at 6305800108, WhatsApp us, visit our hospital directly, or use our online booking system. We offer same-day appointments for urgent cases and advance booking for routine consultations.'
+      answer: 'You can book appointments through multiple ways: Call us at +916305800108, WhatsApp us, visit our hospital directly, or use our online booking system. We offer same-day appointments for urgent cases and advance booking for routine consultations.'
     },
     {
       question: 'What diagnostic services do you offer?',
@@ -23,7 +23,7 @@ export default function FAQPreview() {
     },
     {
       question: 'Do you have ambulance services?',
-      answer: 'Yes, we provide 24x7 ambulance services with trained paramedical staff and life support equipment. Our ambulances are equipped with oxygen, cardiac monitors, and emergency medications. Call 6305800108 for immediate ambulance service.'
+      answer: 'Yes, we provide 24x7 ambulance services with trained paramedical staff and life support equipment. Our ambulances are equipped with oxygen, cardiac monitors, and emergency medications. Call +916305800108 for immediate ambulance service.'
     },
     {
       question: 'What are your visiting hours for patients?',
@@ -97,7 +97,7 @@ export default function FAQPreview() {
               
               <div className="space-y-4">
                 <a
-                  href="tel:6305800108"
+                  href="tel:+916305800108"
                   className="flex items-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
                 >
                   <div className="flex items-center justify-center w-12 h-12 bg-blue-600 rounded-lg mr-4">
@@ -107,7 +107,7 @@ export default function FAQPreview() {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900">Call Us</div>
-                    <div className="text-sm text-gray-600">6305800108 (24x7)</div>
+                    <div className="text-sm text-gray-600">+916305800108 (24x7)</div>
                   </div>
                 </a>
                 

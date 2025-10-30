@@ -136,7 +136,7 @@ export default function InsurancePanels() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:6305800108"
+                href="tel:+916305800108"
                 className="inline-flex items-center justify-center rounded-lg bg-white text-blue-600 px-6 py-3 text-lg font-semibold hover:bg-gray-50 transition-colors"
               >
                 <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">

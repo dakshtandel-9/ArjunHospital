@@ -66,7 +66,7 @@ export default function NotFound() {
           
           <div className="flex gap-3">
             <a
-              href="tel:6305800108"
+              href="tel:+916305800108"
               className="flex-1 inline-flex items-center justify-center px-4 py-3 border border-red-300 text-base font-medium rounded-lg text-red-700 bg-red-50 hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors"
             >
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

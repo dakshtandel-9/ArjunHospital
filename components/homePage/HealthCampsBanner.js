@@ -135,7 +135,7 @@ export default function HealthCampsBanner() {
                 {/* CTA */}
                 <div className="space-y-3">
                   <a
-                    href="tel:6305800108"
+                    href="tel:+916305800108"
                     className={`w-full inline-flex items-center justify-center rounded-lg bg-gradient-to-r ${camp.color} text-white px-4 py-3 text-sm font-semibold hover:opacity-90 transition-opacity`}
                   >
                     Register Now

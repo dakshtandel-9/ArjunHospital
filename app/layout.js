@@ -65,7 +65,7 @@ export const metadata = {
     "geo.placename": "Kadapa",
     "geo.position": "14.4673;78.8242",
     "ICBM": "14.4673, 78.8242",
-    "contact": "6305800108",
+    "contact": "+916305800108",
     "coverage": "Worldwide",
     "distribution": "Global",
     "rating": "General",

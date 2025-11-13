@@ -1,79 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  
-  <!-- Homepage -->
-  <url>
-    <loc>https://arjunhospital.com/</loc>
-    <lastmod>2025-01-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <!-- About Section -->
-  <url>
-    <loc>https://arjunhospital.com/#about</loc>
-    <lastmod>2025-01-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Services/Departments -->
-  <url>
-    <loc>https://arjunhospital.com/#departments</loc>
-    <lastmod>2025-01-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <!-- Doctors -->
-  <url>
-    <loc>https://arjunhospital.com/#doctors</loc>
-    <lastmod>2025-01-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Facilities -->
-  <url>
-    <loc>https://arjunhospital.com/#facilities</loc>
-    <lastmod>2025-01-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- Testimonials -->
-  <url>
-    <loc>https://arjunhospital.com/#testimonials</loc>
-    <lastmod>2025-01-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <!-- Insurance -->
-  <url>
-    <loc>https://arjunhospital.com/#insurance</loc>
-    <lastmod>2025-01-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- FAQ -->
-  <url>
-    <loc>https://arjunhospital.com/#faq</loc>
-    <lastmod>2025-01-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <!-- Contact -->
-  <url>
-    <loc>https://arjunhospital.com/#contact</loc>
-    <lastmod>2025-01-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.arjunhospital.in/</loc>
+  <lastmod>2025-11-13T05:30:11+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.arjunhospital.in/emergency-care</loc>
+  <lastmod>2025-11-13T05:30:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.arjunhospital.in/icu</loc>
+  <lastmod>2025-11-13T05:30:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.arjunhospital.in/general-medicine</loc>
+  <lastmod>2025-11-13T05:30:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.arjunhospital.in/gynecology</loc>
+  <lastmod>2025-11-13T05:30:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.arjunhospital.in/cosmetology</loc>
+  <lastmod>2025-11-13T05:30:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.arjunhospital.in/services/surgery</loc>
+  <lastmod>2025-11-13T05:30:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.arjunhospital.in/orthopedics</loc>
+  <lastmod>2025-11-13T05:30:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.arjunhospital.in/services/pediatrics</loc>
+  <lastmod>2025-11-13T05:30:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.arjunhospital.in/dermatology</loc>
+  <lastmod>2025-11-13T05:30:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.arjunhospital.in/services/diagnostics</loc>
+  <lastmod>2025-11-13T05:30:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.arjunhospital.in/doctors/dr-arjun-avvaru-general-medicine</loc>
+  <lastmod>2025-11-13T05:30:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.arjunhospital.in/doctors/dr-sireesha-gynecology</loc>
+  <lastmod>2025-11-13T05:30:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.arjunhospital.in/diabetology</loc>
+  <lastmod>2025-11-13T05:30:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.arjunhospital.in/infertility</loc>
+  <lastmod>2025-11-13T05:30:11+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>

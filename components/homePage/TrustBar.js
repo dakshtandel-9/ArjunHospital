@@ -82,7 +82,7 @@ export default function TrustBar() {
             
             <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
               <a
-                href="https://wa.me/916305800108"
+                href="https://api.whatsapp.com/send/?phone=916305800108&text&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-green-600 text-white px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-medium hover:bg-green-700 transition-colors"

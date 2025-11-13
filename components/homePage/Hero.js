@@ -29,7 +29,7 @@ export default function Hero() {
                 Call 24x7 Emergency
               </a>
               <Link
-                href="https://wa.me/916305800108"
+                href="https://api.whatsapp.com/send/?phone=916305800108&text&type=phone_number&app_absent=0"
                 className="inline-flex items-center justify-center rounded-lg border-2 border-blue-600 text-blue-600 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors"
               >
                 Book Appointment
@@ -60,7 +60,7 @@ export default function Hero() {
                     <div className="text-xs sm:text-sm opacity-90">Years Experience</div>
                   </div>
                   <div>
-                    <div className="text-lg sm:text-2xl font-bold">50+</div>
+                    <div className="text-lg sm:text-2xl font-bold">15+</div>
                     <div className="text-xs sm:text-sm opacity-90">Expert Doctors</div>
                   </div>
                   <div>

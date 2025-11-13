@@ -141,7 +141,7 @@ export default function Footer() {
                 24x7 Emergency
               </a>
               <a
-                href="https://wa.me/916305800108"
+                href="https://api.whatsapp.com/send/?phone=916305800108&text&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white text-gray-700 px-4 py-2 text-sm font-semibold hover:bg-gray-50 transition-colors"

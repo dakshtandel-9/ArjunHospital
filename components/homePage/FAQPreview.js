@@ -112,7 +112,7 @@ export default function FAQPreview() {
                 </a>
                 
                 <a
-                  href="https://wa.me/916305800108"
+                  href="https://api.whatsapp.com/send/?phone=916305800108&text&type=phone_number&app_absent=0"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors"

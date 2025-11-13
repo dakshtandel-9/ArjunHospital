@@ -1,4 +1,5 @@
 import HomePage from "@/components/homePage/HomePage";
+import { getBaseUrl } from "@/lib/site";
 
 export const metadata = {
   title: "Arjun Hospital - Best Healthcare Services in Kadapa | 24x7 Emergency Care",
@@ -30,7 +31,63 @@ export const metadata = {
 };
 
 export default function Home() {
+  const siteUrl = getBaseUrl();
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": `${siteUrl}#website`,
+        "url": siteUrl,
+        "name": "Arjun Hospital",
+      },
+      {
+        "@type": "MedicalClinic",
+        "@id": `${siteUrl}#clinic`,
+        "name": "Arjun Hospital",
+        "url": siteUrl,
+        "image": `${siteUrl}/logo.png`,
+        "telephone": "+91 63058 00108",
+        "areaServed": { "@type": "City", "name": "Kadapa" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kadapa",
+          "addressRegion": "Andhra Pradesh",
+          "addressCountry": "IN"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
+          }
+        ],
+        "priceRange": "₹₹"
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": `${siteUrl}#business`,
+        "name": "Arjun Hospital",
+        "url": siteUrl,
+        "image": `${siteUrl}/logo.png`,
+        "telephone": "+91 63058 00108",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kadapa",
+          "addressRegion": "Andhra Pradesh",
+          "addressCountry": "IN"
+        }
+      }
+    ]
+  };
+
   return (
-    <HomePage />
+    <>
+      <HomePage />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+    </>
   );
 }

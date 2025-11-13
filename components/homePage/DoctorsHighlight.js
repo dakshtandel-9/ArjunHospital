@@ -6,6 +6,43 @@ import Image from 'next/image';
 export default function DoctorsHighlight() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  // Sliding arrow animation component
+  const SlidingArrow = () => (
+    <div className="relative overflow-hidden h-10 mb-6">
+      <div className="flex items-center">
+        <div className="animate-pulse">
+          <svg 
+            className="w-6 h-6 text-blue-600 transform transition-transform duration-1000 hover:translate-x-2" 
+            fill="currentColor" 
+            viewBox="0 0 20 20"
+          >
+            <path 
+              fillRule="evenodd" 
+              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" 
+              clipRule="evenodd" 
+            />
+          </svg>
+        </div>
+        <div className="ml-3 text-sm font-medium text-blue-600 animate-bounce">
+          Meet Our Expert Team
+        </div>
+        <div className="ml-2 animate-ping">
+          <svg 
+            className="w-4 h-4 text-blue-400" 
+            fill="currentColor" 
+            viewBox="0 0 20 20"
+          >
+            <path 
+              fillRule="evenodd" 
+              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" 
+              clipRule="evenodd" 
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  );
+
   const doctors = [
     {
       name: 'Dr. Arjun Kumar Avvaru',
@@ -14,7 +51,8 @@ export default function DoctorsHighlight() {
       qualifications: 'MD General Medicine, Senior Physician & Critical Care Specialist',
       description: 'Expert in general medicine, critical care, and emergency medical treatments with extensive experience in patient care.',
       image: '/doctor/arjun.png',
-      availability: 'Mon-Sat: 9 AM - 6 PM'
+      availability: 'Mon-Sat: 9 AM - 6 PM',
+      slug: 'dr-arjun-avvaru-general-medicine'
     },
     {
       name: 'Dr. Sireesha Ratala',
@@ -23,7 +61,8 @@ export default function DoctorsHighlight() {
       qualifications: 'MS OBG, Laparoscopic and Infertility Specialist, Cosmetic Gynecologist',
       description: 'Specialized in women\'s health, laparoscopic surgeries, infertility treatments, and cosmetic gynecology procedures.',
       image: '/doctor/shreesha.png',
-      availability: 'Mon-Fri: 10 AM - 5 PM'
+      availability: 'Mon-Fri: 10 AM - 5 PM',
+      slug: 'dr-sireesha-gynecology'
     }
   ];
 
@@ -46,6 +85,10 @@ export default function DoctorsHighlight() {
           <span className="inline-block px-3 py-1 text-sm font-medium text-blue-600 bg-blue-100 rounded-full mb-4">
             Our Medical Team
           </span>
+          {/* Sliding Arrow */}
+          <div className="flex justify-center">
+            <SlidingArrow />
+          </div>
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl mb-4">
             Meet Our Expert Doctors
           </h2>
@@ -63,7 +106,7 @@ export default function DoctorsHighlight() {
             >
               {doctors.map((doctor, index) => (
                 <div key={index} className="w-full flex-shrink-0">
-                  <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 mx-2 sm:mx-4">
+                  <Link href={`/doctors/${doctor.slug}`} className="block bg-white rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 mx-2 sm:mx-4 hover:shadow-xl transition-shadow">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 items-center">
                       {/* Doctor Image */}
                       <div className="text-center lg:text-left">
@@ -109,29 +152,33 @@ export default function DoctorsHighlight() {
                         <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6">{doctor.description}</p>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Navigation Arrows - Hidden on mobile */}
+          {/* Navigation Arrows - One on each side */}
           <button
             onClick={prevSlide}
-            className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow"
+            className="group absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 z-10 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-full p-3 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110 hover:-translate-x-7"
           >
-            <svg className="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="w-6 h-6 transform group-hover:-translate-x-1 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
             </svg>
+            {/* Animated background pulse */}
+            <div className="absolute inset-0 rounded-full bg-blue-400 opacity-0 group-hover:opacity-20 group-hover:animate-ping"></div>
           </button>
           
           <button
             onClick={nextSlide}
-            className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow"
+            className="group absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 z-10 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-full p-3 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-110 hover:translate-x-7"
           >
-            <svg className="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="w-6 h-6 transform group-hover:translate-x-1 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
             </svg>
+            {/* Animated background pulse */}
+            <div className="absolute inset-0 rounded-full bg-blue-400 opacity-0 group-hover:opacity-20 group-hover:animate-ping"></div>
           </button>
         </div>
 

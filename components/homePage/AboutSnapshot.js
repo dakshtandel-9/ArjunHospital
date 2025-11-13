@@ -25,6 +25,43 @@ export default function AboutSnapshot() {
     }
   ];
 
+  // Sliding arrow animation component
+  const SlidingArrow = () => (
+    <div className="relative overflow-hidden h-10 mb-6">
+      <div className="flex items-center">
+        <div className="animate-pulse">
+          <svg 
+            className="w-6 h-6 text-blue-600 transform transition-transform duration-1000 hover:translate-x-2" 
+            fill="currentColor" 
+            viewBox="0 0 20 20"
+          >
+            <path 
+              fillRule="evenodd" 
+              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" 
+              clipRule="evenodd" 
+            />
+          </svg>
+        </div>
+        <div className="ml-3 text-sm font-medium text-blue-600 animate-bounce">
+          Discover Our Excellence
+        </div>
+        <div className="ml-2 animate-ping">
+          <svg 
+            className="w-4 h-4 text-blue-400" 
+            fill="currentColor" 
+            viewBox="0 0 20 20"
+          >
+            <path 
+              fillRule="evenodd" 
+              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" 
+              clipRule="evenodd" 
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <section id="about" className="py-12 sm:py-16 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -35,6 +72,8 @@ export default function AboutSnapshot() {
               <span className="inline-block px-3 py-1 text-sm font-medium text-blue-600 bg-blue-100 rounded-full mb-4">
                 About Arjun Hospital
               </span>
+              {/* Sliding Arrow */}
+              <SlidingArrow />
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
                 Committed to Your Health & Well-being
               </h2>

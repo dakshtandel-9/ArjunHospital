@@ -1,87 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+  http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+  <!-- MAIN PAGES -->
+  <url>
+    <loc>https://www.arjunhospital.in/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://www.arjunhospital.in/about</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.arjunhospital.in/contact</loc>
+    <priority>0.80</priority>
+  </url>
 
-<url>
-  <loc>https://www.arjunhospital.in/</loc>
-  <lastmod>2025-11-14T04:19:44+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.arjunhospital.in/emergency-care</loc>
-  <lastmod>2025-11-14T04:19:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.arjunhospital.in/icu</loc>
-  <lastmod>2025-11-14T04:19:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.arjunhospital.in/general-medicine</loc>
-  <lastmod>2025-11-14T04:19:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.arjunhospital.in/gynecology</loc>
-  <lastmod>2025-11-14T04:19:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.arjunhospital.in/cosmetology</loc>
-  <lastmod>2025-11-14T04:19:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.arjunhospital.in/services/surgery</loc>
-  <lastmod>2025-11-14T04:19:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.arjunhospital.in/orthopedics</loc>
-  <lastmod>2025-11-14T04:19:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.arjunhospital.in/services/pediatrics</loc>
-  <lastmod>2025-11-14T04:19:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.arjunhospital.in/dermatology</loc>
-  <lastmod>2025-11-14T04:19:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.arjunhospital.in/services/diagnostics</loc>
-  <lastmod>2025-11-14T04:19:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.arjunhospital.in/doctors/dr-arjun-avvaru-general-medicine</loc>
-  <lastmod>2025-11-14T04:19:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.arjunhospital.in/doctors/dr-sireesha-gynecology</loc>
-  <lastmod>2025-11-14T04:19:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.arjunhospital.in/diabetology</loc>
-  <lastmod>2025-11-14T04:19:44+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.arjunhospital.in/infertility</loc>
-  <lastmod>2025-11-14T04:19:44+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+  <!-- EMERGENCY -->
+  <url>
+    <loc>https://www.arjunhospital.in/emergency-care</loc>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.arjunhospital.in/emergency-hospital-kadapa</loc>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.arjunhospital.in/fever-hospital-kadapa</loc>
+    <priority>0.80</priority>
+  </url>
 
+  <!-- ICU -->
+  <url>
+    <loc>https://www.arjunhospital.in/icu</loc>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.arjunhospital.in/best-icu-kadapa</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- GENERAL MEDICINE -->
+  <url>
+    <loc>https://www.arjunhospital.in/general-medicine</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- GYNECOLOGY -->
+  <url>
+    <loc>https://www.arjunhospital.in/gynecology</loc>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.arjunhospital.in/gynecology-dr-sireesha-kadapa</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- INFERTILITY -->
+  <url>
+    <loc>https://www.arjunhospital.in/infertility</loc>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.arjunhospital.in/infertility-treatment-kadapa</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- ORTHOPEDICS -->
+  <url>
+    <loc>https://www.arjunhospital.in/orthopedics</loc>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.arjunhospital.in/ortho-hospital-kadapa</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- DERMATOLOGY -->
+  <url>
+    <loc>https://www.arjunhospital.in/dermatology</loc>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.arjunhospital.in/dermatology-kadapa</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- DIABETES -->
+  <url>
+    <loc>https://www.arjunhospital.in/diabetology</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.arjunhospital.in/diabetes-care-kadapa</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- COSMETOLOGY -->
+  <url>
+    <loc>https://www.arjunhospital.in/cosmetology</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.arjunhospital.in/cosmetology-kadapa</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- INSURANCE -->
+  <url>
+    <loc>https://www.arjunhospital.in/insurance</loc>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- DOCTORS -->
+  <url>
+    <loc>https://www.arjunhospital.in/doctors</loc>
+    <priority>0.70</priority>
+  </url>
 
 </urlset>

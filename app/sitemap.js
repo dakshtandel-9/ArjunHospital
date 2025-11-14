@@ -17,6 +17,15 @@ export default function sitemap() {
     "/insurance",
     "/contact",
     "/about",
+    "/emergency-hospital-kadapa",
+    "/best-icu-kadapa",
+    "/gynecology-dr-sireesha-kadapa",
+    "/infertility-treatment-kadapa",
+    "/ortho-hospital-kadapa",
+    "/cosmetology-kadapa",
+    "/dermatology-kadapa",
+    "/diabetes-care-kadapa",
+    "/fever-hospital-kadapa",
   ];
 
   return routes.map((path) => ({
